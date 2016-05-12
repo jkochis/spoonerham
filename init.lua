@@ -18,13 +18,13 @@ end
 hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
 hs.alert.show("Config loaded")
 
--- === hard paste ===
+-- === hard paste to thwart the jerks ===
 
 hs.hotkey.bind({"cmd", "alt"}, "V", function() hs.eventtap.keyStrokes(hs.pasteboard.getContents()) end)
 
--- === pomodoro ===
+-- === roma ===
 
--- pomodoro key binding
-hs.hotkey.bind({"ctrl","alt"}, '9', function() pom_enable() end)
-hs.hotkey.bind({"ctrl","alt"}, '0', function() pom_disable() end)
-hs.hotkey.bind({"ctrl","alt","shift"}, '0', function() pom_reset_work() end)
+-- roma key binding
+hs.hotkey.bind({"ctrl","alt"}, '9', function() roma_enable() end)
+hs.hotkey.bind({"ctrl","alt"}, '0', function() roma_disable() end)
+hs.hotkey.bind({"ctrl","alt","shift"}, '0', function() roma_reset_work() end)
