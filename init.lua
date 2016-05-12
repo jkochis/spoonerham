@@ -1,5 +1,5 @@
-require "caffeine"
-require "pomodoor"
+require "nodoze"
+require "roma"
 require "sizerup"
 
 -- === hot reload config ===
